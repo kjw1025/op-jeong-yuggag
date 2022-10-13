@@ -1,219 +1,269 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="images/favicon16.png" sizes="16x16" />
+    <link rel="icon" href="images/favicon32.png" sizes="32x32" />
+    <link rel="icon" href="images/favicon192.png" sizes="192x192" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jeongyookgak</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정육각 :: 언제나 초신선</title>
 
-  <!-- css -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- js -->
-  <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-</head>
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="js/script.js"></script>
+  </head>
 
-<body>
-  <div class="wrap">
-    <!-- header -->
-    <section class="header">
-      <div class="nav-container">
-        <div class="nav-left">
-          <h1><a href="#"><img src="images/logo.svg" alt=""></a></h1>
-          <ul class="">
-            <li><a href="#">쇼핑하기</a></li>
-            <li><a href="#">배송안내</a></li>
-            <li><a href="#">이벤트</a></li>
-          </ul>
-        </div>
-
-        <div class="nav-right">
-          <div class="r-top-menu">
+  <body>
+    <div class="wrap">
+      <!-- modal popup -->
+      <div class="modal-wrap">
+        <div class="modal-main">
+          <!-- top -->
+          <div class="modal-top">
+            <h2 class="modal-title">정육각 클론코딩</h2>
             <ul>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">고객센터</a></li>
-
-              <div class="nav-r-vline"></div>
-
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
+              <li>
+                이 사이트는 <span>📚 스터디용</span>으로 제작되었으며 리소스는
+                <span>원작자</span>에게 있습니다.
+              </li>
+              <li>
+                해당 사이트 관련 문제사항 또는 문의사항이 있다면, <br />
+                <span class="modal-email">art.1025p@gmail.com</span> 으로 연락해
+                주세요 :)
+              </li>
             </ul>
           </div>
-          <div class="r-top-icon">
-            <img src="images/shop icon.svg" alt="" class="shop-con">
-            <img src="images/menu icon.svg" alt="" class="m-con">
+          <!-- middle -->
+          <div class="modal-middle">
+            <h3 class="modal-subTitle">수정 및 개선사항</h3>
+            <ul>
+              <li>1. 메타 태그를 통한 검색엔진 최적화 진행하였습니다.</li>
+            </ul>
+          </div>
+          <!-- bottom -->
+          <div class="modal-bottom">
+            <p>본 사이트는 <span>Chrome</span>에 최적화되어 있습니다.</p>
+            <button class="modal-close">Close</button>
           </div>
         </div>
       </div>
-    </section>
-    <!-- viusal -->
-    <section class="viusal">
-      <div class="viusal-slide">
-        <a href="#"><img src="images/banner .1.png" alt=""></a>
-      </div>
-    </section>
-    <!-- event -->
-    <section class="event">
-      <div class="imgbox">
-        <ul>
-          <li><a href="#"><img src="images/event img 1.png" alt=""></a></li>
-          <li><a href="#"><img src="images/event img 2.png" alt=""></a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- best goods -->
-    <section class="best-goods">
-      <div class="best-g-box">
-        <h5>정육각 베스트 상품</h5>
-        <div class="floor-1">
-          <ul class="clearfix">
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 1.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 돼지 삼겹살 구이용</h6>
-              <p>기준가 23,400원/600g</p>
+      <!-- // modal popup -->
 
-            </li>
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 2.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 닭볶음탕</h6>
-              <p>기준가 6,700원/950g</p>
+      <!-- header -->
+      <section class="header">
+        <div class="nav-container">
+          <div class="nav-left">
+            <h1>
+              <a href="#"><img src="images/logo.svg" alt="" /></a>
+            </h1>
+            <ul class="">
+              <li><a href="#">쇼핑하기</a></li>
+              <li><a href="#">배송안내</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
 
-            </li>
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 3.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 등심 돈까스</h6>
-              <p>기준가 11,800원/770g</p>
+          <div class="nav-right">
+            <div class="r-top-menu">
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객센터</a></li>
 
-            </li>
-          </ul>
-        </div>
-        <div class="floor-2">
-          <ul class="clearfix">
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 4.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 동물복지 무항생제 유정란</h6>
-              <p>기준가 6,900원/12구</p>
-              <div class="mu-tag">
-                <img src="images/mo tag.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 5.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 무항생제 우유</h6>
-              <p>기준가 3,600원/900ml</p>
-              <div class="mu-tag">
-                <img src="images/mo tag.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div class="f-imgbox">
-                <a href="#"><img src="images/product 6.png" alt=""></a>
-                <div class="product-icon">
-                  <button>
-                    <a href="#"></a>
-                  </button>
-                </div>
-              </div>
-              <h6>초신선 무항생제 이유식용 한우 우둔 다짐육</h6>
-              <p>기준가 15,300원/180g</p>
-              <div class="mu-tag">
-                <img src="images/mo tag.svg" alt="">
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- more goods banner -->
-    <section class="more-goods-banner">
-      <div class="in-banner">
-        <a href="#">
-          <img src="images/banner_shop.png" alt="">
-        </a>
-      </div>
-    </section>
-    <!-- footer -->
-    <section class="footer">
-      <div class="footer-fbox">
-        <div class="fter-in-t clearfix">
-          <ul class="l-text">
-            <li><a href="#">인재채용</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#"><b>개인정보처리방침</b></a></li>
-          </ul>
-          <div class="r-app">
-            <button>
-              <img src="images/icon pon.svg" alt="">
-              정육각 앱설치
-            </button>
-            <a href="#" class="kaka"></a>
-            <a href="#" class="instar"></a>
+                <div class="nav-r-vline"></div>
+
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+              </ul>
+            </div>
+            <div class="r-top-icon">
+              <img src="images/shop icon.svg" alt="" class="shop-con" />
+              <img src="images/menu icon.svg" alt="" class="m-con" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="fter-in-b">
-        <div class="left-footer">
-          <img src="images/logo 블랙.svg" alt="">
-          <p>(주)정육각 대표이사: <span> ㅣ </span>김재연 주소: 경기도 김포시 고촌읍 아라육로57번길 126</p>
-          <p>사업자등록번호 : 224-87-00271 <a href="#">[조회]</a><span> ㅣ </span>통신판매업신고번호: 2021-경기김포-0668</p>
-          <p>개인정보관리책임자: 박준태(privacy@yookgak.com)</p>
-          <p>© 2021 Jeongyookgak Inc. All rights reserved.</p>
+      </section>
+      <!-- viusal -->
+      <section class="viusal">
+        <div class="viusal-slide">
+          <a href="#"><img src="images/banner .1.png" alt="" /></a>
         </div>
-        <div class="right-footer">
-          <h6>고객센터</h6>
-          <h3>1800-0658</h3>
-          <p>
-            <span>
-              평일: 08:30 - 17:30<br>
-              점심: 12:30 - 13:30<br>
-              (토, 일 및 공휴일 휴무)
-            </span>
-          </p>
-          <p>카카오톡: <a href="#">@정육각</a></p>
-          <p>이메일: <a href="#">help@yookgak.com</a></p>
-          <button class="b-1">자주묻는질문</button>
-          <button class="b-2">1:1 문의</button>
+      </section>
+      <!-- event -->
+      <section class="event">
+        <div class="imgbox">
+          <ul>
+            <li>
+              <a href="#"><img src="images/event img 1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/event img 2.png" alt="" /></a>
+            </li>
+          </ul>
         </div>
-      </div>
-  </div>
-  </section>
-  </div>
-</body>
+      </section>
+      <!-- best goods -->
+      <section class="best-goods">
+        <div class="best-g-box">
+          <h5>정육각 베스트 상품</h5>
+          <div class="floor-1">
+            <ul class="clearfix">
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 1.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 돼지 삼겹살 구이용</h6>
+                <p>기준가 23,400원/600g</p>
+              </li>
 
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 2.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 닭볶음탕</h6>
+                <p>기준가 6,700원/950g</p>
+              </li>
+
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 3.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 등심 돈까스</h6>
+                <p>기준가 11,800원/770g</p>
+              </li>
+            </ul>
+          </div>
+          <div class="floor-2">
+            <ul class="clearfix">
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 4.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 동물복지 무항생제 유정란</h6>
+                <p>기준가 6,900원/12구</p>
+                <div class="mu-tag">
+                  <img src="images/mo tag.svg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 5.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 무항생제 우유</h6>
+                <p>기준가 3,600원/900ml</p>
+                <div class="mu-tag">
+                  <img src="images/mo tag.svg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="f-imgbox">
+                  <a href="#"><img src="images/product 6.png" alt="" /></a>
+                  <div class="product-icon">
+                    <button>
+                      <a href="#"></a>
+                    </button>
+                  </div>
+                </div>
+                <h6>초신선 무항생제 이유식용 한우 우둔 다짐육</h6>
+                <p>기준가 15,300원/180g</p>
+                <div class="mu-tag">
+                  <img src="images/mo tag.svg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- more goods banner -->
+      <section class="more-goods-banner">
+        <div class="in-banner">
+          <a href="#">
+            <img src="images/banner_shop.png" alt="" />
+          </a>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div class="footer-fbox">
+          <div class="fter-in-t clearfix">
+            <ul class="l-text">
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li>
+                <a href="#"><b>개인정보처리방침</b></a>
+              </li>
+            </ul>
+            <div class="r-app">
+              <button>
+                <img src="images/icon pon.svg" alt="" />
+                정육각 앱설치
+              </button>
+              <a href="#" class="kaka"></a>
+              <a href="#" class="instar"></a>
+            </div>
+          </div>
+        </div>
+        <div class="fter-in-b">
+          <div class="left-footer">
+            <img src="images/logo 블랙.svg" alt="" />
+            <p>
+              (주)정육각 대표이사: <span> ㅣ </span>김재연 주소: 경기도 김포시
+              고촌읍 아라육로57번길 126
+            </p>
+            <p>
+              사업자등록번호 : 224-87-00271 <a href="#">[조회]</a
+              ><span> ㅣ </span>통신판매업신고번호: 2021-경기김포-0668
+            </p>
+            <p>개인정보관리책임자: 박준태(privacy@yookgak.com)</p>
+            <p>© 2021 Jeongyookgak Inc. All rights reserved.</p>
+          </div>
+          <div class="right-footer">
+            <h6>고객센터</h6>
+            <h3>1800-0658</h3>
+            <p>
+              <span>
+                평일: 08:30 - 17:30<br />
+                점심: 12:30 - 13:30<br />
+                (토, 일 및 공휴일 휴무)
+              </span>
+            </p>
+            <p>카카오톡: <a href="#">@정육각</a></p>
+            <p>이메일: <a href="#">help@yookgak.com</a></p>
+            <button class="b-1">자주묻는질문</button>
+            <button class="b-2">1:1 문의</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
